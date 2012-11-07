@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>jQuery Or</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" media="screen" href="css/global.css">
+<link rel="stylesheet" media="print" href="css/print.css">
+
+
+
+<style type="text/css">
+  .download { float: right; }
+  pre 	{ background: #000; color: #fff; padding: 15px; margin-bottom:15px;}
+  ul 	{ padding-bottom:15px;}
+  li 	{ margin-left:15px; list-style-type:disc; }
+</style>
+
+
+
+</head>
+
+<body>
+	
+
+	<div id="exists"></div>
+
+	<div class="container">
+		
+		<article class="clm left">
+			
+			<h1>jQuery Or</h1>
+			<p>jQuery Or is a 5 line jQuery plugin for handling selectors that might not return any elements.  Its is akin to saying "get this element, or if that element doesnt exist, use this element". </p>
+
+			<h2>When would this be useful?</h2>
+			<p>I have found it useful for initialising jQuery plugins on the entire page, or on a specific part of the page after it has been updated.  For example: </p>
+
+			<pre>function decorate( $wrapper ) {
+	$wrapper.or().find('select').somePluggin();
+}
+</pre>
+
+			<h2>Features</h2>
+			<p>Its a relatively simple plugin</p>
+			<ul>
+				<li>Pass jQuery or a selector to fallback to that selector</li>
+				<li>Leave the selector blank and or will fall back to the body element</li>
+				<li>jQuery or returns the origional element(s) or the fallback element</li>
+			</ul>
+			<h2>Tests</h2>
+			<p><a href="test/">Unit tests are available</a> and are written using Jasmine.  I'm still relatively new to TDD, so please do lemme know if you see any problems</p>
+			
+		</div>
+		
+		<aside class="clm">
+			
+			<h1>Demo</h1>
+			<p>Run the following examples in your console</p>
+			<pre>$( '#exists' ).or( '#doesntExist' ); 			
+$( '#doesntExist' ).or( '#exists' );
+$( '#doesntExist' ).or();</pre>
+			
+			<h2>Instalation</h2>
+			<ul>
+				<li>Download this project (<a href="http://github.com/byrichardpowell/Style-Select/zipball/master">zip</a> or <a href="http://github.com/byrichardpowell/Style-Select/tarball/master">tar</a>)</li>
+				<li>Or clone the project (clone command below)</li>
+				<li>Include jquery on your page</li>
+				<li>Include jquery.or on your page</li>
+			</ul>
+
+			<h2>Git Checkout</h2>
+			<p>Checkout the project by running this in terminal</p>
+			<pre>$ git clone git://github.com/byrichardpowell/Style-Select</pre>
+		    <p>get the source code on GitHub : <a href="http://github.com/byrichardpowell/Style-Select">byrichardpowell/Style-Select</a></p>
+			
+			
+		</aside>
+		
+
+
+	</div>	
+	
+	
+	<a href="http://github.com/byrichardpowell/Style-Select">
+		<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+	</a>
+		
+
+
+
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.or.js"></script>
+
+
+
+
+
+</body>
+</html>
+

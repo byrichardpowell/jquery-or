@@ -1,0 +1,110 @@
+
+/* =-- 1. LESS --- */
+
+	/* 	COLORS (1 = lightest, 10 = med, 20 = dark)
+		Primary: Blue 
+		Secondary: Grey
+		Highlight: Green
+		Error: Red
+	*/
+	
+		@p-7: #8b9fab;
+		@p-8: #a8bac9;
+		@p-9: #788d9e;
+		@p-10: #5b7990;
+		@p-11: #536d81;
+		@p-12: #455c6e;
+		@p-13: #3d5061;
+		
+		@s-5: #f4f8f8;
+		@s-6: #dbe3e5;
+		@s-7: #ebeeee;
+		@s-8: #e2e2e2;
+		@s-9: #c9c9c9;
+		@s-10: #adadad;
+		@s-11: #8b9aa6;
+		@s-12: #848484;
+		@s-13: #666;
+		@s-14: #444;
+		@s-15: #333;
+		
+		@h-8: #aaeb8f;
+		@h-9: #74cc69;
+		@h-10: #38b62b;
+		@h-11: #23a343;
+		@h-12: #639f71;
+		@h-13: #237736;
+		@h-14: #1c5f2b;
+		
+		@e-10: #e50a2f;
+	
+		
+	/* GRADIENTS */
+		.gradient(@light, @dark) {
+			background-color: @dark;
+			background: -webkit-gradient(
+			    linear,
+			    left bottom,
+			    left top,
+			    color-stop(0, @dark),
+			    color-stop(1, @light)
+			);
+			background: -moz-linear-gradient(
+			    center bottom,
+			    @dark 0%,
+			    @light 100%
+			);
+
+		}
+		
+		
+
+	/* CORNERS (largest, larger, large, med, small, smaller, smallest) */
+		@radius-sma: 2px;
+		@radius-med: 5px;
+		@radius-lrg: 8px;
+		
+		.border-radius (@r) {
+			border-radius: @r;
+		 	-moz-border-radius: @r;
+			-webkit-border-radius: @r;
+		}
+		
+		.border-radius-tl (@r) {
+			-webkit-border-top-left-radius: @r;
+			-moz-border-top-bottomleft: @r;
+			border-top-left-radius: @r;
+		}
+		
+		.border-radius-tr (@r) {
+			-webkit-border-top-right-radius: @r;
+			-moz-border-radius-topright: @r;
+			border-top-right-radius: @r;
+		}
+		
+		.border-radius-br (@r) {
+			-webkit-border-bottom-right-radius: @r;
+			-moz-border-radius-bottomright: @r;
+			border-bottom-right-radius: @r;	
+		}
+		
+		.border-radius-bl (@r) {
+			-webkit-border-bottom-left-radius: @r;
+			-moz-border-radius-bottomleft: @r;
+			border-bottom-left-radius: @r;
+		}
+		
+	
+	/* SHADOWS */
+		.shadow (@arguments) {
+			-moz-box-shadow: @arguments;
+		   	-webkit-box-shadow: @arguments;
+		   	box-shadow: @arguments;	
+		}
+		
+	
+	
+		
+	/* IMAGES */
+		.spr01 ()	{background-image: url(../img/spr/spr01_icons.png); background-repeat:no-repeat;}
+

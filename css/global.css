@@ -1,0 +1,244 @@
+/* 
+Global
+___________________________________________________
+*/
+/* =-- 1. LESS --- */
+/* =-- 1. LESS --- */
+/* 	COLORS (1 = lightest, 10 = med, 20 = dark)
+		Primary: Blue 
+		Secondary: Grey
+		Highlight: Green
+		Error: Red
+	*/
+/* GRADIENTS */
+/* CORNERS (largest, larger, large, med, small, smaller, smallest) */
+/* SHADOWS */
+/* IMAGES */
+/* =-- 2. Reset & Quick Fixes --- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+abbr[title], dfn[title] {
+  cursor: help;
+}
+body {
+  padding: 20px;
+}
+h1 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 0;
+}
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
+p {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 0 14px 0;
+  max-width: 500px;
+}
+.clm {
+  float: left;
+  width: 40%;
+  max-width: 460px;
+}
+.left {
+  padding-right: 5%;
+}
+li {
+  font-size: 14px;
+  line-height: 20px;
+  list-style-type: none;
+}
+/* Styled select */
+.style-select {
+  cursor: pointer;
+  max-width: 200px;
+  min-width: 85px;
+  height: 25px;
+  position: relative;
+  padding: 25px 0 0 0;
+}
+.style-select li {
+  position: relative;
+  margin: 0 24px 0 4px;
+  padding: 5px 6px 4px;
+  list-style-type: none;
+  background: #fff;
+  font-size: 12px;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  font-weight: bold;
+  -moz-box-shadow: 4px 4px 6px #c9c9c9;
+  -webkit-box-shadow: 4px 4px 6px #c9c9c9;
+  box-shadow: 4px 4px 6px #c9c9c9;
+}
+.style-select li:hover {
+  background-color: #455c6e;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #455c6e), color-stop(1, #5b7990));
+  background: -moz-linear-gradient(center bottom, #455c6e 0%, #5b7990 100%);
+  color: #fff;
+}
+.style-select li:active {
+  padding: 4px 6px 5px;
+}
+.style-select .last {
+  border-bottom: 1px solid #e2e2e2;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* Open || Closed Styles */
+.style-select .icon {
+  background-image: url(../img/spr/spr01_icons.png);
+  background-repeat: no-repeat;
+  background-position: right 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+}
+.style-select.is-closed .icon {
+  background-position: right -40px;
+}
+/* Active Style */
+.style-select .active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 156px;
+  margin: 0;
+  padding: 5px 34px 4px 10px;
+  color: #adadad;
+  font-weight: normal;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #c9c9c9;
+  background-color: #e2e2e2;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e2e2e2), color-stop(1, #f4f8f8));
+  background: -moz-linear-gradient(center bottom, #e2e2e2 0%, #f4f8f8 100%);
+  -moz-box-shadow: 0 0 0 #e2e2e2;
+  -webkit-box-shadow: 0 0 0 #e2e2e2;
+  box-shadow: 0 0 0 #e2e2e2;
+}
+.style-select .active:hover, .style-select .active:focus {
+  background-color: #e2e2e2;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e2e2e2), color-stop(1, #f4f8f8));
+  background: -moz-linear-gradient(center bottom, #e2e2e2 0%, #f4f8f8 100%);
+  border-color: #adadad;
+  color: #848484;
+}
+.style-select .active:active {
+  padding: 4px 34px 5px 10px;
+  -moz-box-shadow: inset 0 0 4px #adadad;
+  -webkit-box-shadow: inset 0 0 4px #adadad;
+  box-shadow: inset 0 0 4px #adadad;
+}

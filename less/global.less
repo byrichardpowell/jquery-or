@@ -1,0 +1,50 @@
+/* 
+Global
+___________________________________________________
+*/
+
+
+/* =-- 1. LESS --- */
+
+@import "config.less";
+
+
+
+/* =-- 2. Reset & Quick Fixes --- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video  { margin : 0; padding : 0; border : 0; font-size : 100%; font : inherit; vertical-align : baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section  {display : block; }
+abbr[title], dfn[title] {cursor : help;}
+
+	
+body	{padding:20px;}
+h1		{font-size:16px; font-weight:bold; line-height: 24px; padding:0;}
+h2		{font-size:16px; font-weight:bold; line-height:20px;}
+p		{font-size:14px; line-height:20px; padding: 0 0 14px 0; max-width:500px;}
+.clm	{float:left; width:40%; max-width:460px;}
+.left	{padding-right:5%;}	
+li		{font-size:14px; line-height:20px; list-style-type:none;}
+			
+	
+			
+	
+	
+	
+	/* Styled select */
+		.style-select					{cursor:pointer; max-width:200px; min-width:85px; height:25px; position:relative; padding:25px 0 0 0;}
+		.style-select li				{position:relative; margin:0 24px 0 4px; padding:5px 6px 4px; list-style-type:none; background:#fff; font-size:12px; border-left:1px solid @s-8; border-right:1px solid @s-8; font-weight:bold; .shadow(4px 4px 6px @s-9);}
+		.style-select li:hover			{.gradient(@p-10, @p-12); color:#fff;}
+		.style-select li:active			{padding:4px 6px 5px;}
+		.style-select .last				{border-bottom:1px solid @s-8; .border-radius-bl(@radius-med); .border-radius-br(@radius-med)}
+	
+		/* Open || Closed Styles */
+			.style-select .icon				{.spr01(); background-position:right 0; display:block; position:absolute; top:0; right:0; width:25px; height:25px;}
+			.style-select.is-closed .icon	{background-position:right -40px;}
+		
+		/* Active Style */
+			.style-select .active			{position:absolute; top:0; left:0; width:156px; margin:0; padding:5px 34px 4px 10px; color:@s-10; font-weight:normal; .border-radius(@radius-med); border:1px solid @s-9;   .gradient(@s-5, @s-8); .shadow(0 0 0 @s-8);}
+			.style-select .active:hover,
+			.style-select .active:focus		{.gradient(@s-5, @s-8); border-color:@s-10; color: @s-12;}
+			.style-select .active:active	{padding:4px 34px 5px 10px; .shadow(inset 0 0 4px @s-10);}
+
+
