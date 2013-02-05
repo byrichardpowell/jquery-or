@@ -1,0 +1,33 @@
+{
+    "name": "or",
+    "title": "jQuery Or Selector",
+    "description": "jQuery Or handles selectors that might not return any elements. Its is akin to saying 'get this element, or if that element doesnt exist, use this element'.",
+    "keywords": [
+        "selector"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Richard Powell",
+        "url": "http://www.byrichardpowell.co.uk/"
+    },
+    "maintainers": [
+        {
+            "name": "Richard Powell",
+            "email": "richardo@gmail.com",
+            "url": "www.byrichardpowell.co.uk"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs": "https://github.com/byrichardpowell/jquery-or/issues",
+    "homepage": "http://byrichardpowell.github.com/jquery-or/",
+    "docs": "http://byrichardpowell.github.com/jquery-or/",
+    "download": "https://github.com/byrichardpowell/jquery-or",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
